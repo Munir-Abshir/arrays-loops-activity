@@ -14,6 +14,14 @@
 // 3. painting
 // Total hobbies: 3
 
+let hobbies = ['soccer','watching tv','swimming'];
+
+for (let hobby of hobbies) {
+     console.log(hobby);
+}
+console.log(hobbies.length);
+
+
 /**
  * #2 Colors
  * ---------
@@ -25,6 +33,17 @@
  * 4. Output the array and number of times teal was found
  */
 
+let colors = ['red','blue','green','yellow','teal'];
+
+let tealCount = 0;
+
+for (let count of colors) {
+if (count === 'teal'){
+     tealCount = tealCount + 1;
+}
+
+}
+console.log(tealCount);
 
 // Example output
 // green, red, teal, orange, teal
@@ -41,6 +60,23 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+let numbers = [1,2,3,4,5,6,7,8,9,10,100000,10000121];
+let oddNumbers =[];
+let evenNumbers =[];
+
+for (let i = 0; i < numbers.length; i++) {
+     if ((numbers[i] % 2) == 0){
+          evenNumbers.push(numbers[i]);
+     }
+     if ((numbers[i] % 2) == 1) {
+
+          oddNumbers.push(numbers[i]);
+
+     }
+}
+console.log(numbers);
+console.log(evenNumbers);
+console.log(oddNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -57,6 +93,23 @@
  * 4. Output both arrays
  */
 
+let bool = [true,false,false,true,true,false];
+
+
+let toggled = [];
+
+for (let i = 0; i < bool.length; i++) {
+     if ( bool[i] === true ) {
+          toggled.push(false);
+     } if (bool[i] === false) {
+          toggled.push(true);
+
+     }
+     
+}
+
+
+console.log(toggled);
 
 // Example output
 // true, false, true, true
@@ -75,6 +128,15 @@
  * Hint: Try using a while loop for this one.
  */
 
+let numb = [0,1,2,3,4,5,-1,0,0,0];
+
+while (numb[(numb.length - 1)] == 0) {
+     numb.pop();
+}
+
+console.log(numb);
+
+
 
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
@@ -90,6 +152,19 @@
       and lowest numbers.
  * 3. Log the highest and lowest number to the console
  */
+
+let ggg = [2, 2, -3, 7, 4, 1, 7, 12, 8];
+let high = ggg[0];
+let low = ggg[0];
+for (let i = 0; i < ggg.length; i++){
+    if ( ggg[i] > high) {
+      high = ggg[i];
+     } if ( ggg[i] < low) {
+          low = ggg[i];
+         } 
+     }
+console.log(high);
+console.log(low);
 
 
 // Example output
